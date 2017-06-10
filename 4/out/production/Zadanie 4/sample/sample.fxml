@@ -1,0 +1,31 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="AnchorPane" prefHeight="300" prefWidth="420"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top >
+        <Label fx:id="titleLabel" text="BlackJack"/>
+    </top>
+    <center>
+        <HBox alignment="center">
+            <VBox alignment="center" >
+                <VBox alignment="center" >
+                    <Label fx:id="yourLabel" text="Your's card"/>
+                    <Label fx:id="playerCardsLabel"/>
+                </VBox>
+                <VBox alignment="center" >
+                    <Label fx:id="croupierLabel" text="Croupier's card"/>
+                    <Label fx:id="croupierCardsLabel"/>
+                </VBox>
+            </VBox>
+
+            <VBox alignment="center" >
+                <Button text="Start Game" fx:id="buttonStart" onAction="#startEvent"/>
+                <Button text="Hit" fx:id="buttonHit" onAction="#hitEvent"/>
+                <Button text="Stand" fx:id="buttonStand" onAction="#standEvent"/>
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <Label fx:id="infoLabel" text=""/>
+    </bottom>
+</BorderPane>
